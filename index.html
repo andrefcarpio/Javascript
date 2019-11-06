@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simulador de Combustível</title>
+    <title>AND</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body> 
-        <h1>Simulador de Vantagem no abastecimento </h1>
-        <input type="image" src="Imagens\neutro.png" alt="abc" id="status">
-    <form name="fmrSimulador">
+<body>
+    <h1>AND</h1>
+    <img src="swoff.png" alt="Chave Ligada" id="sw1" onclick= "sw(1)">
+    <img src="swoff.png" alt="Chave Desligada" id="sw2" onclick= "sw(2)">
+    <img src="off.jpg" alt="Lampada Normal" id="lamp" onclick="queb()">
+    <img src="conserto.png" alt="Lampada Normal" id="conserto" onclick="arruma()">
+    <hr>
+    <p>
+        <img src="circ_and.png" alt ="Circuito Aberto" id="circ">
+        <img src="tabeland.png" id="tabela" >
+    </p>
 
-        <p><input type="text" name="txtGaso" placeholder="Digite o Valor da Gasolina"></p>
-        <p><input type="text" name="txtEtanol" placeholder="Digite o Valor da Etanol"></p>
-        <input type="button" value="Calcular" onclick="calculo()">
-        <input type="reset" name = "resetar" value="Limpar" onclick="reiniciar()">
-
-        <script src="simulador.js"></script>
-    </form>
-
+    <script src="and.js" ></script>
 </body>
 
 </html>
