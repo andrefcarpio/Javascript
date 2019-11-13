@@ -11,11 +11,14 @@ function avaliar() {
     }
     else if (idade < 16) {
         (document.getElementById('resultado').innerText = "Proibido Votar")
+        (document.getElementById('voto').src = "probido.jpg")
     }
     else if (idade >= 18 && idade < 70) {
         (document.getElementById('resultado').innerText = "Voto Obrigarório")
+        (document.getElementById('voto').src = "obrig.jpg")
     } else {
         (document.getElementById('resultado').innerText = "Voto Facultativo")
+        (document.getElementById('voto').src = "facult.jpg")
     }
 
 
@@ -24,4 +27,5 @@ function avaliar() {
 
 function resetar() {
     (document.getElementById('resultado').innerText = "")
+    (document.getElementById('voto').src = "")
 }
