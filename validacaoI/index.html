@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validação I</title>
+</head>
+
+<body>
+    <form name="frmCadastro" action="cadastro.php" method="POST" onsubmit="return validacao()" >
+        <input type="text" name="txtNome" placeholder="Nome"><br><br>
+        <input type="text" name="txtCpf" placeholder="CPF"><br><br>
+        <label>Sexo</label><br>
+
+        <input type="radio" name="sexo" value="M" checked = "checked">Masculino
+        <input type="radio" name="sexo" value="F">Feminino<br>
+        <textarea name="txtPerfil" cols="30" rows="10"></textarea><br>
+        <input type="submit" name="enviar" value="Salvar">
+    </form>
+    <script src="validador.js"></script>
+</body>
+
+</html>
