@@ -7,6 +7,50 @@ body{
     font-family: sans-serif;
 
 }
+header{
+    max-width: 1112px;
+    margin: 0 ;
+    height: 128px;
+}
+.Logo{
+    height: 96px;
+    padding: 15px;
+    display: inline-block;
+}
+.Logo img{
+    height: 100%;
+      
+}
+.Hamburguer{
+    display: none;
+      
+}
+.Menu{
+    float: right;
+    padding-top: 52px;  
+}
+.Menu ul{
+    list-style: none;
+     
+}
+.Menu ul li{
+    float: left;
+    padding: 3px;
+   
+}
+.Menu ul li a{
+text-decoration: none;
+padding: 15px;
+color:#000;
+
+}
+
+.Menu ul li a:hover{
+
+    color:#ff0000;
+    transition:all 0.5s;
+    
+    }
 
 .Layout{
     background-image:url('imagens/background.jpg');
@@ -26,9 +70,26 @@ body{
 .Modulo{
 padding: 150px 0px  150px 0px;
 margin: 0 auto;
-max-width: 1024px;
+max-width: 1112px;
+text-align: center;
+}
+/*Destaque*/
+.Destaque{
+    list-style: none;/*remover os bulets*/
+    overflow: auto; /* corrigir o comportamento do float*/
+}
+.Destaque li{
+    float: left;
+    padding: 10px;
+}
+
+.Destaque img{
+    border: #e8e8e8 1px solid;
+    cursor: pointer;
+    background: turquoise
 
 }
+
 footer{
     background-color: #8b0000;
     padding: 70px;
